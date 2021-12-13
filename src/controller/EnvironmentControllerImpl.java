@@ -34,12 +34,6 @@ public class EnvironmentControllerImpl implements EnvironmentController {
             this.viewController = new ViewControllerImpl(this);
             this.sim = new Simulation(this, this.viewController); 
             new Thread(this.sim).start(); 
-//            SwingUtilities.invokeLater(new Runnable() {
-//                public void run() {
-//                    //da sostituire con finestra grafica principale
-//                    new Window(EnvironmentControllerImpl.this); 
-//                }
-//            });
         }
     }
 
@@ -50,8 +44,6 @@ public class EnvironmentControllerImpl implements EnvironmentController {
     public final void stop() {
         sim.stop();
         this.showAnalysis();
-        //fare close del parco che fa uscire persone
-        //chiudere finestra principale e aprire quella di analisi finale
     }
 
     /**

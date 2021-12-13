@@ -36,7 +36,7 @@ public interface EnvironmentController {
      * Sets the visitors number as selected by the user in the gui menu.
      * @param visitorsNum visitors number
      * @throws VisitorsOutOfBoundException if the number chosen by the user is 
-     * less than 1 or greater than 100
+     * less than 1 or greater than 300
      */
     void setVisitorsNumber(int visitorsNum) throws VisitorsOutOfBoundException;
 
